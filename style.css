@@ -1,0 +1,137 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav__items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+}
+.nav__items-item {
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #777;
+}
+.nav__items-image {
+  width: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.nav__items-link {
+  text-decoration: none;
+  color: inherit;
+}
+.nav__items-link:hover {
+  border-bottom: 1px solid black;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15rem;
+  text-align: center;
+}
+.search__container {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.search__input {
+  display: block;
+  width: 70%;
+  max-width: 40rem;
+  margin: 4rem 0;
+  padding: 1.6rem 4rem;
+  border-radius: 100px;
+  outline: none;
+  border: 1px solid #ddd;
+  font-size: 1.6rem;
+  transition: all 0.2s ease;
+}
+.search__input:hover, .search__input:focus {
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+.search__icon {
+  position: relative;
+  left: 4rem;
+}
+.search__microphone {
+  position: relative;
+  cursor: pointer;
+  right: 4rem;
+}
+
+.btn-search {
+  background-color: rgba(238, 238, 238, 0.4);
+  padding: 1.2rem 2rem;
+  border: none;
+  cursor: pointer;
+}
+.btn-search:hover {
+  background-color: rgba(238, 238, 238, 0.8);
+  border: 1px solid #ddd;
+}
+.btn-search:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.footer {
+  background-color: #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.footer__right-items, .footer__left-items {
+  list-style: none;
+  font-size: 1.6rem;
+  color: #777;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__right-items li, .footer__left-items li {
+  margin-right: 1.5rem;
+}
+.footer__right-items li a, .footer__left-items li a {
+  text-decoration: none;
+  color: inherit;
+}
+.footer__right-items li a:hover, .footer__left-items li a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 769px) {
+  .footer__right:not(:last-child), .footer__left:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 769px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
